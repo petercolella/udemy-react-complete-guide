@@ -5,15 +5,15 @@ class Person extends Component {
     constructor(props) {
         super(props);
         console.log('[Person.js] Inside Constructor', props);
-      }
-    
-      UNSAFE_componentWillMount() {
+    }
+
+    UNSAFE_componentWillMount() {
         console.log('[Person.js] Inside componentWillMount()');
-      }
-    
-      componentDidMount() {
+    }
+
+    componentDidMount() {
         console.log('[Person.js] Inside componentDidMount');
-      }
+    }
 
     render () {
         console.log('[Person.js] Inside render()');
