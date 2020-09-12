@@ -13,9 +13,9 @@ class Person extends Component {
     this.inputElement = React.createRef();
   }
 
-  UNSAFE_componentWillMount() {
-    console.log('[Person.js] Inside componentWillMount()');
-  }
+  // UNSAFE_componentWillMount() {
+  //   console.log('[Person.js] Inside componentWillMount()');
+  // }
 
   componentDidMount() {
     console.log('[Person.js] Inside componentDidMount');

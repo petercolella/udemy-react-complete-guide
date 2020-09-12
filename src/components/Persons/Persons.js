@@ -9,9 +9,9 @@ class Persons extends PureComponent {
     this.lastPersonRef = React.createRef();
   }
 
-  UNSAFE_componentWillMount() {
-    console.log('[Persons.js] Inside componentWillMount()');
-  }
+  // UNSAFE_componentWillMount() {
+  //   console.log('[Persons.js] Inside componentWillMount()');
+  // }
 
   componentDidMount() {
     console.log('[Persons.js] Inside componentDidMount()');
@@ -33,16 +33,20 @@ class Persons extends PureComponent {
   //     // return true;
   // }
 
-  UNSAFE_componentWillUpdate(nextProps, nextState) {
+  // UNSAFE_componentWillUpdate(nextProps, nextState) {
+  //   console.log(
+  //     '[UPDATE Persons.js] Inside componentWillUpdate',
+  //     nextProps,
+  //     nextState
+  //   );
+  // }
+
+  componentDidUpdate(nextProps, nextState) {
     console.log(
-      '[UPDATE Persons.js] Inside componentWillUpdate',
+      '[UPDATE Persons.js] Inside componentDidUpdate',
       nextProps,
       nextState
     );
-  }
-
-  componentDidUpdate() {
-    console.log('[UPDATE Persons.js] Inside componentDidUpdate');
   }
 
   render() {
