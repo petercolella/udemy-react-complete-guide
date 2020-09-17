@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'; // eslint-disable-line no-unused-vars
 
-import classes from './App.css';
+import classes from './App.module.css';
 import Persons from '../components/Persons/Persons';
 import Cockpit from '../components/Cockpit/Cockpit';
 import Aux from '../hoc/Aux';
